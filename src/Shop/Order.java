@@ -14,12 +14,11 @@ public class Order{
 
     private Customer customer;
 
-    public Order(String status, LocalDate orderDate, LocalDate deloveryDate, List<Product> products, Customer customer) {
+    public Order(String status, LocalDate orderDate, List<Product> products, Customer customer) {
         Random rndm = new Random();
         this.id = rndm.nextLong(10);
         this.status = status;
         this.orderDate = orderDate;
-        this.deloveryDate = deloveryDate;
         this.products = products;
         this.customer = customer;
     }
